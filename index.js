@@ -16,7 +16,7 @@ const app=express();
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({ extended: true }))
 const corsOptions ={
-  origin:'http://localhost:3000', 
+  origin:'https://bubble-safe-frontend-oms5byj64-x-sunidhi-xs-projects.vercel.app/', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }
