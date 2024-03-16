@@ -13,6 +13,7 @@ db.on("open", () => {
 })
 db.on("error", () => console.log("Not Connected to DB"))
 const app=express();
+app.set("trust proxy", 1)
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({ extended: true }))
 const corsOptions ={
